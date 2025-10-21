@@ -1,0 +1,7 @@
+Elements.Click=//button[text()=' Elements']
+Elements.TextBox.link=//a[text()=' Text Box']
+Elements.TextBox.FullName.text=//input[@id='fullname']
+Elements.TextBox.Email.text=//input[@id='email']
+Elements.TextBox.CurrentAddress.text=//textarea[@name='address']
+Elements.TextBox.Password.text=password
+Elements.TextBox.Submit.button=//input[@value='Submit']
