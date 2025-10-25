@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import com.aventstack.extentreports.Status;
 
@@ -30,6 +31,7 @@ public class ElementsTextBoxSteps {
 	
 	@When("user clicks on Text Box button")
 	public void userclicksonTextBoxbutton() {
+		
 		myWaits.clickOnAfterElementVisible(driver, tb.clickTextBox(), 20);
 		extentManager.createTest("Inside Text Box validation");
 		extentManager.testLog(Status.PASS, "User clicked on Text");
