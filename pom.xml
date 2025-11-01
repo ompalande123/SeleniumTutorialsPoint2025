@@ -14,6 +14,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+
+
+
   <dependencies>
     <!-- project related dependencies -->
     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
@@ -52,7 +55,12 @@
 </dependency>
 
 
-    
+  <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.14.0</version>
+</dependency>  
     
     
   </dependencies>
