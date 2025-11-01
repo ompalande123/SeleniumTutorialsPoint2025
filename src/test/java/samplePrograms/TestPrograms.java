@@ -96,7 +96,7 @@ public class TestPrograms {
 		System.out.println(strList);
 
 		strList.addFirst("FirstPos");
-		strList.addLast("LastPos");
+//		strList.addLast("LastPos");
 		System.out.println(strList);
 
 		System.out.println(strList.contains("Two")); // true
