@@ -1,12 +1,12 @@
 Feature: Test Elements from Tutorials point  
 
 
-#Background:
-#Given user is on tutorials point page
-#And user expands Elements section from the page
+Background:
+Given user is on tutorials point page
+And user expands Elements section from the page
 
 
-@TextBoxElements
+@TextBoxElements @smoke
 Scenario: To test text box elements
 	 When user clicks on Text Box button
 	 And user fills Text Box fields
@@ -14,12 +14,13 @@ Scenario: To test text box elements
 	 Then user closes the browser
 	 
 
-@Test2
+@Test2 @smoke
 Scenario: To test text box elements
 	 When user intentionally failed test case
+	 
 
 
-@ReadAllfromExcel
+@ReadAllfromExcel @smoke
 Scenario Outline: User wants to read all values from the excel sheet
 	Given user want to read sheet "Create_Users"
 	
