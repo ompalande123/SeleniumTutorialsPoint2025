@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Oct 25 13:25:39 IST 2025</td>
+<td>Started on:</td><td>Thu Oct 30 23:50:56 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13450 ms)</td>
+<tr><td>Total time:</td><td>108 seconds (108898 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,97 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Test Checkboxes Elements from Tutorials point"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (24020cc5f9a632a66dc6a5d8f11883bd)] -&gt; xpath: //a[text()=&apos; Check Box&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.37.0&apos;, revision: &apos;3c1da1e342&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\ompal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50614/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 24020cc5f9a632a66dc6a5d8f11883bd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utilities.MyWaitsManager.clickOnAfterElementVisible(MyWaitsManager.java:23)
+	at stepDefinitions.ElementsCheckBoxSteps.userclicksonCheckBoxbutton(ElementsCheckBoxSteps.java:33)
+	at ✽.user selects checkbox section(file:///C:/WorkspaceSeleniumUI/selniumUIProject/src/test/resources/features/CheckBox.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace17816584", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17816584'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (24020cc5f9a632a66dc6a5d8f11883bd)] -&gt; xpath: //a[text()=&apos; Check Box&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.37.0&apos;, revision: &apos;3c1da1e342&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\ompal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50614/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 24020cc5f9a632a66dc6a5d8f11883bd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utilities.MyWaitsManager.clickOnAfterElementVisible(MyWaitsManager.java:23)
+	at stepDefinitions.ElementsCheckBoxSteps.userclicksonCheckBoxbutton(ElementsCheckBoxSteps.java:33)
+	at ✽.user selects checkbox section(file:///C:/WorkspaceSeleniumUI/selniumUIProject/src/test/resources/features/CheckBox.feature:12)
+</pre></div></td>
+<td>105</td>
+<td>runner.TestRunner@4009e306</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test text box elements", "Test Elements from Tutorials point"</td>
+<td><div><pre>java.lang.AssertionError: expected [7] but found [5]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at stepDefinitions.CommonStepsElements.userintentionallyfailedtestcase(CommonStepsElements.java:72)
+	at ✽.user intentionally failed test case(file:///C:/WorkspaceSeleniumUI/selniumUIProject/src/test/resources/features/TextBox.feature:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1730062534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1730062534'><pre>java.lang.AssertionError: expected [7] but found [5]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at stepDefinitions.CommonStepsElements.userintentionallyfailedtestcase(CommonStepsElements.java:72)
+	at ✽.user intentionally failed test case(file:///C:/WorkspaceSeleniumUI/selniumUIProject/src/test/resources/features/TextBox.feature:19)
+</pre></div></td>
+<td>84</td>
+<td>runner.TestRunner@4009e306</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test text box elements", "Test Elements from Tutorials point"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (24020cc5f9a632a66dc6a5d8f11883bd)] -&gt; xpath: //a[text()=&apos; Text Box&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.37.0&apos;, revision: &apos;3c1da1e342&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\ompal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50614/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 24020cc5f9a632a66dc6a5d8f11883bd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utilities.MyWaitsManager.clickOnAfterElementVisible(MyWaitsManager.java:23)
+	at stepDefinitions.ElementsTextBoxSteps.userclicksonTextBoxbutton(ElementsTextBoxSteps.java:35)
+	at ✽.user clicks on Text Box button(file:///C:/WorkspaceSeleniumUI/selniumUIProject/src/test/resources/features/TextBox.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace588664044", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace588664044'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (24020cc5f9a632a66dc6a5d8f11883bd)] -&gt; xpath: //a[text()=&apos; Text Box&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.37.0&apos;, revision: &apos;3c1da1e342&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\ompal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50614/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 24020cc5f9a632a66dc6a5d8f11883bd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utilities.MyWaitsManager.clickOnAfterElementVisible(MyWaitsManager.java:23)
+	at stepDefinitions.ElementsTextBoxSteps.userclicksonTextBoxbutton(ElementsTextBoxSteps.java:35)
+	at ✽.user clicks on Text Box button(file:///C:/WorkspaceSeleniumUI/selniumUIProject/src/test/resources/features/TextBox.feature:11)
+</pre></div></td>
+<td>105</td>
+<td>runner.TestRunner@4009e306</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,7 +169,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User wants to read all values from the excel sheet", "Test Elements from Tutorials point"</td>
 <td></td>
-<td>8</td>
+<td>84</td>
 <td>runner.TestRunner@4009e306</td></tr>
 </table><p>
 </body>

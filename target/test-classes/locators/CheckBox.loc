@@ -1,0 +1,4 @@
+Elements.Click=//button[text()=' Elements']
+Elements.CheckBox.link=//a[text()=' Check Box']
+Elements.CheckBox.MainLevel1=//input[@id='c_bs_1']
+Elements.CheckBox.MainLevel2=//input[@id='c_bs_2']
