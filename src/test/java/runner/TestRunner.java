@@ -12,6 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 		glue="stepDefinitions",
 		plugin= {"pretty","html:target/cucumber-reports","rerun:target/rerun.txt"},
 		tags="@CheckBox1"
+
 		)
 @Test
 public class TestRunner extends AbstractTestNGCucumberTests {
