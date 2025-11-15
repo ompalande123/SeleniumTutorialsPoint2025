@@ -11,16 +11,19 @@ import io.cucumber.testng.CucumberOptions;
 		features="src/test/resources/features",
 		glue="stepDefinitions",
 		plugin= {"pretty","html:target/cucumber-reports","rerun:target/rerun.txt"},
-		tags="@CheckBox1"
+		tags="@CheckBox1_Validations"
 
 		)
 @Test
 public class TestRunner extends AbstractTestNGCucumberTests {
 	
 	//For parallel execution of scenarios
-	 @Override
-	 @DataProvider(parallel=true) public Object[][] scenarios(){ return
-	 super.scenarios(); }
+	/*
+	 * @Override
+	 * 
+	 * @DataProvider(parallel=true) public Object[][] scenarios(){ return
+	 * super.scenarios(); }
+	 */
 	 
 
 }

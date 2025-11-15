@@ -1,6 +1,8 @@
 package stepDefinitions;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import com.aventstack.extentreports.Status;
 
@@ -45,5 +47,18 @@ public class ElementsCheckBoxSteps {
 		extentManager.testLog(Status.PASS, "User selected check boes");
 
 	}
+	
+	@When("user select all child checkboxes")
+	public void userallchildcheckboxes() throws InterruptedException {
+		
+		myWaits.clickOnAfterElementVisible(driver, cb.clickMainLevel1Plus(), 30);
+		myWaits.clickOnAfterElementVisible(driver, cb.clickChild1Checkbox(), 20);
+		myWaits.clickOnAfterElementVisible(driver, cb.clickChild2Checkbox(), 20);
+		
+		Assert.assertEquals(true, driver.findElement(By.xpath("//input[@id='c_bs_1']")).isSelected());
+		
+	}
+	
+	
 
 }

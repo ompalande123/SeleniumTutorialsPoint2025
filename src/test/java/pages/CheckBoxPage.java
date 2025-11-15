@@ -33,5 +33,18 @@ public class CheckBoxPage {
 		return driver.findElement(By.xpath(myLocatorsReader.getLocator("Elements.CheckBox.MainLevel2")));
 	}
 	
+	public WebElement clickChild1Checkbox() {
+		return driver.findElement(By.xpath(myLocatorsReader.getLocator("Elements.CheckBox.MainLeve1.Child1")));
+	}
+	
+	public WebElement clickChild2Checkbox() {
+		return driver.findElement(By.xpath(myLocatorsReader.getLocator("Elements.CheckBox.MainLeve1.Child2")));
+	}
+	
+	
+	public WebElement clickMainLevel1Plus() {
+		return driver.findElement(By.xpath(myLocatorsReader.getLocator("Elements.CheckBox.MainLevel1Plus")));
+	}
+	
 
 }
