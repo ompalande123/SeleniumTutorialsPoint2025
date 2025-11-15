@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven for Testing Tutorials Project
+name: Omkar Testing site
 
 on:
   push:
