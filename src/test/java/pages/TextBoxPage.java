@@ -30,9 +30,7 @@ public class TextBoxPage {
 		
 	//Methods
 	// We are returning webdriver because we created manager waits utility there we need WebElement as a method parameter
-	public WebElement clickElementsButton() {
-		return driver.findElement(By.xpath(myLocatorsReader.getLocator("Elements.Click")));
-	}
+	
 	
 	public WebElement clickTextBox() {
 		return driver.findElement(By.xpath(myLocatorsReader.getLocator("Elements.TextBox.link")));
@@ -58,6 +56,7 @@ public class TextBoxPage {
 	public WebElement clickSubmit() {
 		return driver.findElement(By.xpath(myLocatorsReader.getLocator("Elements.TextBox.Submit.button")));
 	}
+	
 	
 	
 

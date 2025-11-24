@@ -19,5 +19,4 @@ Scenario:
 User wants to select all child checkboxes and to validate if parent checkbox get select automatically
 When user selects checkbox section
 When user select all child checkboxes
-#Then user should able to see parent check box selected
-#And user closes the browser
+And user closes the browser

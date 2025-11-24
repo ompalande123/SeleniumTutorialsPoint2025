@@ -1,0 +1,2 @@
+Mainpage.Widgets=//button[text()=' Widgets']
+Elements.Click=//button[text()=' Elements']

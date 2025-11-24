@@ -1,0 +1,4 @@
+Elements.WebTables.Button=//a[contains(@href,'webtables')]
+WebTables.Row1.FirstName=(//table/tbody/tr[1]/td)[1]
+WebTables.Row1.LastName=(//table/tbody/tr[1]/td)[2]
+WebTables.Row1.Age=(//table/tbody/tr[1]/td)[3]

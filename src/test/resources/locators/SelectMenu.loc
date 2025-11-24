@@ -1,0 +1,2 @@
+Widgets.SelectMenu=//a[text()=' Select Menu']
+Widgets.SelectMenu.SelectOne=//select[@class='form-select']
