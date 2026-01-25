@@ -1,0 +1,22 @@
+/target/
+
+# Ignore Eclipse project settings
+.project
+.classpath
+.settings/
+
+
+
+# Ignore log files
+*.log
+
+
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore specific files/folders
+testData/
+extentReports/
+logs/
