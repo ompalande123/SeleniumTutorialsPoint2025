@@ -28,14 +28,15 @@ jobs:
     - name: Build and run tests with Maven
       run: mvn clean test
 
-    - name: email test report
-      uses: dawidd6/action-send-mail@v3
-      with:
-        server_address: smtp.gmail.com
-        server_port: 465
-        username: ${{ secrets.EMAIL_USERNAME }}
-        password: ${{ secrets.EMAIL_PASSWORD }}
-        subject: Selenium Test Report
-        body: Please find the attached test report.
-        to: ompalande123@gmail.com
-        from: Github actions automation loader 
+    #commenting the email part as it is not working due to security issues with Gmail, you can use other email services or set up an app password for Gmail to make it work
+    #- name: email test report
+     # uses: dawidd6/action-send-mail@v3
+     # with:
+      #  server_address: smtp.gmail.com
+       # server_port: 465
+        #username: ${{ secrets.EMAIL_USERNAME }}
+        #password: ${{ secrets.EMAIL_PASSWORD }}
+        #subject: Selenium Test Report
+        #body: Please find the attached test report.
+        #to: ompalande123@gmail.com
+        #from: Github actions automation loader 
