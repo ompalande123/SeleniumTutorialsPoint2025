@@ -39,6 +39,7 @@ public class RegistrationSteps {
 	public void user_enters_student_email() throws InterruptedException {
 		myWaits.sendKeysAfterVisible(driver, sr.enterEmail(), 10, "test.tester@tester.com");
 		Thread.sleep(5000);
+		driver.quit();
 	}
 	
 
