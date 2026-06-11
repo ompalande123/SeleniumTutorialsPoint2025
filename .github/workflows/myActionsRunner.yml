@@ -5,13 +5,6 @@ on:
 
   schedule:
     - cron: '00 17 * * *' # Runs every day at 17:00 UTC (adjust as needed)    
-
-runs:
-  using: 'node24'
-  pre: 'setup.js'
-  main: 'index.js'
-  post: 'cleanup.js'
-
   
 
 jobs:
@@ -23,10 +16,10 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Install Java
-      uses: actions/setup-java@v4
+      uses: actions/setup-java@v5
       with:
         java-version: '17'
-        distribution: 'temurin'
+        distribution: temurin
 
     - name: Build and run tests with Maven
       run: mvn clean test
