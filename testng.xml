@@ -8,7 +8,7 @@
     
     <test name="Feature Scenarios Execution" parallel="methods" thread-count="5">
         <classes>
-            <class name="runner.StudentRegistrationRunner"/>
+            <class name="runner.TestRunner"/>
             
             </classes>
     </test>
