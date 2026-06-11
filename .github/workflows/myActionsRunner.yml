@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '15 18 0 * *' # Runs every day at   
+    - cron: '15 18 * * *' # Runs every day at 18:15 UTC (adjust as needed)   
   
 
 jobs:
