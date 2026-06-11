@@ -1,7 +1,10 @@
 utilities\MyWaitsManager.class
+stepDefinitions\RegistrationSteps.class
+runner\StudentRegistrationRunner.class
 stepDefinitions\CommonStepsElements.class
 pages\SelectMenuPage.class
 stepDefinitions\ElementsTextBoxSteps.class
+pages\StudentRegistrationPage.class
 pages\TextBoxPage.class
 utilities\MyLocatorsReader.class
 stepDefinitions\ElementsWebTableSteps.class

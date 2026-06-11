@@ -11,6 +11,10 @@
 *.log
 
 
+# ignore build files
+target/*
+bin/
+
 
 # Ignore OS-specific files
 .DS_Store
@@ -20,3 +24,7 @@ Thumbs.db
 testData/
 extentReports/
 logs/
+
+# ignore all files inside the "reports" folder
+reports/*
+
