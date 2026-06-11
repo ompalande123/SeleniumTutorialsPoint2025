@@ -5,13 +5,6 @@ on:
 
   schedule:
     - cron: '00 17 * * *' # Runs every day at 17:00 UTC (adjust as needed)    
-
-runs:
-  using: 'node24'
-  pre: 'setup.js'
-  main: 'index.js'
-  post: 'cleanup.js'
-
   
 
 jobs:
