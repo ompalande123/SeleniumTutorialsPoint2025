@@ -1,5 +1,7 @@
 package samplePrograms;
 
+import java.util.Map;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -59,6 +61,25 @@ public static void main(String args[]){
         for(int i=0; i<rolesJsonArray.length(); i++){
             System.out.println(rolesJsonArray.getString(i));
         }
+
+
+        // 3. Store json response in a map and then retrieve values from the map
+        Map<String, Object> responseMap = jsonObject.toMap();
+        String username3 = (String) responseMap.get("username");
+        System.out.println("Username (Map): " + username3);
+
+        Map<String, Object> profileMap = (Map<String, Object>) responseMap.get("profile");
+        String firstName3 = (String) profileMap.get("firstName");
+        String lastName3 = (String) profileMap.get("lastName");
+        System.out.println("Full Name (Map): " + firstName3 + " " + lastName3);
+
+        Map<String, Object> preferencesMap = (Map<String, Object>) responseMap.get("preferences");
+        String theme = (String) preferencesMap.get("theme");
+        System.out.println("Theme (Map): " + theme);
+
+        
+        // 4. Store json response in a file and then read the file and parse the json response
+        
 
 
         
