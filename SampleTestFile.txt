@@ -1,2 +1,3 @@
 Hi,
 This is just to check the merge flow
+New text added
